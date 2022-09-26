@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="td"
+            type="com.lucasapps.appdaltonismo.TesteDaltonico" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teste de Daltonismo"
+            android:textColor="#8A0707"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.058" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="descubra se você possui!!!"
+            android:textColor="#838A0707"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.558"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.12" />
+
+        <TextView
+            android:id="@+id/textViewResposta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{td.resp3}"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonTeste3"
+            app:layout_constraintEnd_toEndOf="@+id/textViewResposta2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textViewResposta2"
+            app:layout_constraintTop_toTopOf="@+id/buttonTeste3" />
+
+        <TextView
+            android:id="@+id/textViewResposta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{td.resp1}"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonTeste1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonTeste1"
+            app:layout_constraintTop_toTopOf="@+id/buttonTeste1" />
+
+        <TextView
+            android:id="@+id/textViewResposta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{td.resp2}"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonTeste2"
+            app:layout_constraintEnd_toEndOf="@+id/textViewResposta1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textViewResposta1"
+            app:layout_constraintTop_toTopOf="@+id/buttonTeste2"
+            app:layout_constraintVertical_bias="0.517" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suas Respostas!!!"
+            android:textColor="#8A0707"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textViewResposta1"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="@+id/textViewResposta1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.193" />
+
+        <Button
+            android:id="@+id/buttonVerificar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#146A05"
+            android:text="Verificar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833" />
+
+        <Button
+            android:id="@+id/buttonTeste3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8A0707"
+            android:text="teste 3"
+            app:layout_constraintBottom_toTopOf="@+id/buttonVerificar"
+            app:layout_constraintEnd_toEndOf="@+id/buttonTeste2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/buttonTeste2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonTeste1"
+            app:layout_constraintVertical_bias="0.655" />
+
+        <Button
+            android:id="@+id/buttonTeste1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8A0707"
+            android:text="teste 1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <Button
+            android:id="@+id/buttonTeste2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8A0707"
+            android:text="teste 2"
+            app:layout_constraintBottom_toTopOf="@+id/buttonTeste3"
+            app:layout_constraintEnd_toEndOf="@+id/buttonTeste1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/buttonTeste1"
+            app:layout_constraintTop_toBottomOf="@+id/buttonTeste1"
+            app:layout_constraintVertical_bias="0.471" />
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/buttonVerificar"
+            app:layout_constraintVertical_bias="0.637" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
